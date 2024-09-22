@@ -1,0 +1,59 @@
+@font-face{
+  font-family:"ToucheBold";
+  src:url('Touche-Bold.ttf')
+}
+.footer{
+  padding:50px 0px;
+  background-color: #2d2e32;
+}
+.footer-container{
+  margin:0px auto;
+  padding:0px 40px;
+  max-width:1030px;
+}
+.footer-content{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:auto;
+}
+.footer-content h3{
+  color: #fff;
+  font-size: 17px;
+  font-family:"ToucheBold";
+  text-align:center;
+}
+.social-media{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  justify-content:space-between;
+}
+.social-media a{
+  cursor:pointer;
+  width:32px;
+  height:32px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.social-media svg{
+  transition: width 0.05s ease-in;
+  transition: height 0.05s ease-in;
+}
+.social-media svg:hover{
+  width:32px;
+  height:32px;
+}
+@media screen and (max-width:512px){
+  .footer-content{
+    flex-direction:column;
+    gap:20px;
+  }
+}
+@media screen and (max-width:460px){
+  .footer-container{
+    padding:0px 10px;
+  }
+}

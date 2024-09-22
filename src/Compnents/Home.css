@@ -1,0 +1,182 @@
+@font-face{
+  font-family:"ToucheBold";
+  src:url('Touche-Bold.ttf')
+}
+@font-face{
+  font-family:"Mulish";
+  src:url('Mulish-VariableFont_wght.ttf')
+}
+.hero{
+  background-color:#f9f9f9;
+  height:100vh;
+  width:100%;
+}
+.container{
+  margin:0px auto;
+  padding:0px 40px;
+  max-width:1030px;
+  height:650px;
+}
+.content{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  position:relative;
+}
+.hero-area{
+  width:100%;
+  display:flex;
+  gap:100px;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  /* justify-content:space-between; */
+}
+.text-area{
+  max-width:500px;
+}
+.img-area{
+  width:350px;
+  height:350px;
+  /* background-color:red; */
+  background:url('MicrosoftTeams-image (1).png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-position-y:-5px;
+  border-radius:200px;
+  transition:all 0.25s;
+}
+.text-area h1{
+  color:#2d2e32;
+  font-family:"ToucheBold";
+  font-size:55px;
+  line-height:1.2;
+  margin-bottom:20px;
+  margin-top:20px
+}
+.text-area p{
+  color: #555;
+  font-family:"Mulish";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.text-area span{
+  display:flex;
+  gap:13px;
+  margin-top:25px;
+  margin-bottom:25px
+}
+.tech-stack{
+  position:absolute;
+  left:0;
+  bottom:0;
+  display:flex;  
+}
+.tech-stack p{
+  border-right: 2px solid rgba(45, 46, 50, .5);
+  color: #2d2e32;
+  font-family:"Mulish";
+  font-weight: 600;
+  margin-right: 70px;
+  padding-right: 20px;
+  display:inline-block;
+}
+.tech-stack ul{
+  display:flex;
+  gap:30px;
+}
+.tech-stack li{
+  color: #2d2e32;
+  font-family:"Mulish";
+  font-weight: 600;
+  list-style:none;
+}
+#color{
+  color:black;
+}
+.text-area a:hover #color{
+  color:#147efb;
+}
+@media screen and (max-width:1030px){
+  .hero{
+    height:auto;
+    padding:110px 0px;
+  }
+  .hero-area{
+    flex-direction:column-reverse;
+    gap:30px;
+  }
+  .container{
+    height:auto;
+  }
+  .tech-stack{
+    position:static;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;    
+  }
+  .tech-stack p{
+    margin-right:0px;
+    padding-right:0px;
+    border-bottom: 2px solid rgba(45, 46, 50, .5);
+    margin-bottom:30px;
+    padding-bottom:10px;
+    border-right:none;
+  }
+  .text-area{
+    text-align:center;
+  }
+  .text-area span{
+    justify-content:center;
+  }
+}
+@media screen and (max-width:529px){
+  .text-area h1{
+    font-size:40px;
+  }
+  .img-area{
+    height:280px;
+    width:280px
+  }
+  .container{
+    padding:0px 17px;
+  }
+}
+@media screen and (max-width:453px){
+  .tech-stack ul{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+}
+@media screen and (max-width:361px){
+  .text-area h1{
+    font-size:35px;
+  }
+  .img-area{
+    height:240px;
+    width:240px
+  }
+}
+@media screen and (max-width:320px){
+  .text-area h1{
+    font-size:30px;
+  }
+  .img-area{
+    height:230px;
+    width:230px
+  }
+}
+@media screen and (max-width:279px){
+  .text-area h1{
+    font-size:9vw;
+  }
+  .img-area{
+    height:71vw;
+    width:71vw
+  }
+}
