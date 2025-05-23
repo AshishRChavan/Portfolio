@@ -35,7 +35,7 @@ export default function Projects() {
                   <h2 className="source-text">Live Demo</h2>
                 </div>
               </div>
-              <img className="project-img" src="../../../assets/ComingSoon.webp" width="571px" height="309.09px" style={{opacity:"0.9"}}></img>
+              <img className="project-img" src="../../../assets/NewsAppImg.png" width="571px" height="309.09px" style={{opacity:"0.9"}}></img>
             </div>
           </div>
         </div>
