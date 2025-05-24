@@ -29,10 +29,12 @@
 .project-grid-one{
   display:grid;
   grid-template-columns:1.5fr 1fr;
+  align-items: center;
 }
 .project-grid-two{
   display:grid;
   grid-template-columns:1fr 1.5fr;
+  align-items: center;
   margin-top:80px;
 }
 .project-img{
